@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { TranslateModule } from '@ngx-translate/core';
+// import { TranslateModule } from '@ngx-translate/core';
 
 
-import { AppRoutingModule } from './app-routing.module';
+// import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { StreamChatModule, StreamAutocompleteTextareaModule } from 'stream-chat-angular';
+// import { StreamChatModule, StreamAutocompleteTextareaModule } from 'stream-chat-angular';
 import { MessageComponent } from './message/message.component';
 import { ChannelPreviewComponent } from './channel-preview/channel-preview.component';
 import { FormsModule } from '@angular/forms';
@@ -17,10 +17,10 @@ import { FormsModule } from '@angular/forms';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, 
-    TranslateModule.forRoot(), 
-    StreamAutocompleteTextareaModule,
-    StreamChatModule,
+    // AppRoutingModule, 
+    // TranslateModule.forRoot(), 
+    // StreamAutocompleteTextareaModule,
+    // StreamChatModule,
     FormsModule
   ],
   providers: [],

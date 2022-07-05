@@ -87,12 +87,14 @@ export class AppComponent {
       await channel.watch();
       this.channel = channel;
       this.messages = channel.state.messages;
+  
       this.channel.on('message.new', event => {
         this.messages = [...this.messages, event.message];
       });
 
       const filter = {
         type: 'team',
+        
         members: { $in: [`${this.currentUser.me.id}`] },
       };
       const sort = { last_message_at: -1 };
