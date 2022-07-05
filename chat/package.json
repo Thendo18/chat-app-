@@ -21,6 +21,7 @@
     "@ngx-translate/core": "^14.0.0",
     "form-data": "^4.0.0",
     "rxjs": "~7.5.0",
+    "socket.io-client": "^4.5.1",
     "stream-chat": "^6.7.2",
     "stream-chat-angular": "^3.5.3",
     "tslib": "^2.3.0",
