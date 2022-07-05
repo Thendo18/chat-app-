@@ -56,13 +56,13 @@ import axios from 'axios';
 })
 export class AppComponent {
   title = 'angular-chat';
-  channel: ChannelData | undefined;
+  channel!: ChannelData;
   username = '';
   messages: Message[] = [];
   newMessage = '';
-  channelList: ChannelData[] | undefined;
+  channelList!: ChannelData[];
   chatClient: any;
-  currentUser: User | undefined;
+  currentUser!: User;
 
   async joinChat() {
     const { username } = this;
