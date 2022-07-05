@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { StreamChatModule, StreamAutocompleteTextareaModule } from 'stream-chat-angular';
 import { MessageComponent } from './message/message.component';
 import { ChannelPreviewComponent } from './channel-preview/channel-preview.component';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +20,8 @@ import { ChannelPreviewComponent } from './channel-preview/channel-preview.compo
     AppRoutingModule, 
     TranslateModule.forRoot(), 
     StreamAutocompleteTextareaModule,
-    StreamChatModule
+    StreamChatModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
