@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import  io from 'socket.io-client';
+
+const SOCKET_ENDPOINT = 'localhost:3000';
 
 @Component({
   selector: 'app-chat-inbox',
@@ -7,9 +10,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChatInboxComponent implements OnInit {
 
+
+  socket: any;
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.setupSocketConnection();
   }
+  
+
+  setupSocketConnection() {
+    this.socket = io(SOCKET_ENDPOINT);
+ }
 
 }
