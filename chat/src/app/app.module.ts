@@ -6,9 +6,13 @@ import { TranslateModule } from '@ngx-translate/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StreamChatModule, StreamAutocompleteTextareaModule } from 'stream-chat-angular';
+import { MessageComponent } from './message/message.component';
+import { ChannelPreviewComponent } from './channel-preview/channel-preview.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MessageComponent,
+    ChannelPreviewComponent
   ],
   imports: [
     BrowserModule,
