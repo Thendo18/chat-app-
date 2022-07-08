@@ -13,6 +13,11 @@ io.on('connection', (socket) => {
   });
 });
 
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  next();
+});
+
 http.listen(port, () => {
   console.log(`Socket.IO server running at http://localhost:${port}/`);
 });
